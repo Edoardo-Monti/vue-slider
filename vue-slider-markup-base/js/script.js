@@ -1,12 +1,10 @@
-
-
-console.log(slides);
-
 const {createApp} = Vue
 
 createApp({
     data() {
         return {
+
+            myActive: 0,
 
             slides: [
                 {
