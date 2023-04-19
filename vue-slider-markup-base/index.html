@@ -25,8 +25,8 @@
                 </div>
 
                 <div class="thumbs">
-                    <div class="prev"></div>
-                    <div class="next"></div>
+                    <div class="prev" @click = "prev"></div>
+                    <div class="next" @click = "next"></div>
                     <div v-for="(element, index) in slides " v-bind:class=" (myActive == index) ? 'thumb thumb active' : 'thumb' ">
                         <img v-bind:src="element.image" alt="Svezia" />
                     </div>

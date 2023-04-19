@@ -32,6 +32,17 @@ createApp({
         }
     },
     methods: {
-
+        prev(){
+            this.myActive--
+            if(this.myActive < 0){
+                this.myActive = this.slides.length - 1
+            }
+        },
+        next(){
+            this.myActive++
+            if(this.myActive > this.slides.length - 1){
+                this.myActive = 0
+            }
+        }
     }
 }).mount("#app")
